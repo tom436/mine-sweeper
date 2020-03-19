@@ -1,15 +1,61 @@
 
 table{
     border: solid 1px;
+    margin: auto;
 }
+button{
+    font-weight:bold ;
+    padding: 15px;
+    border-radius: 6px;
+    cursor: pointer;
 
+}
+.easy{
+    background-color: rgb(171, 224, 110);
+}
+.medium{
+    background-color: rgb(240, 207, 101);
+}
+.hard{
+    background-color: rgb(209, 79, 79);
+}
+.smiley{
+    font-size: x-large;
+    padding: 5px;
+    background-color:rgb(161, 161, 161);
+    border: solid 0.5px;
+
+}
 td{
     border:  0.5px;
     border-style: outset;
     text-align: center;
-    height: 20px;
-    width: 20px;
+    width: 23px;
+    height: 23px;
     background-color: rgb(161, 161, 161);
-
     cursor: pointer;
+}
+.game{
+    border: solid 1px;
+    text-align: center;
+    margin: auto;
+    background-color: rgb(223, 173, 192);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 3px;
+}
+.hint-btn{
+    background-color: rgb(153, 224, 224);
+    border-radius: 30px;
+}
+.life{
+    display: inline-block ;
+    padding-right: 200px;
+    text-align: left;
+    font-weight: bold;
+}
+.time{
+    display: inline-block ;
+    text-align: right;
+    font-weight: bold;
 }
