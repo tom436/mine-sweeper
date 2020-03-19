@@ -12,7 +12,7 @@ var gHintMode = false;
 var gTimeInterval;
 var gLevel = {
     size: 8,
-    mines: 3
+    mines: 12
 };
 
 var gGame = {
@@ -26,6 +26,7 @@ var gGame = {
 
 
 function initGame(length) {
+    clearInterval(gTimeInterval);
     gBoard = [];
     var elTable = document.querySelector(".board");
     elTable.innerHTML = '';
@@ -39,6 +40,8 @@ function initGame(length) {
     updateLife(0);
     buildBoard(length);
     renderBoard();
+    gGame.secsPassed=0;
+    setTimer();
 }
 
 function initHintBtn() {
