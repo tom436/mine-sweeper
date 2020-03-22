@@ -1,7 +1,16 @@
 
+
+body{
+    
+    background-image: url( "bcg.png");
+    background-size: contain;  
+}
+
+
 table{
     border: solid 1px;
     margin: auto;
+
 }
 button{
     font-weight:bold ;
@@ -19,13 +28,16 @@ button{
 .hard{
     background-color: rgb(209, 79, 79);
 }
-.smiley{
+.smiley,.manuall-mode,.undo{
+    
     font-size: x-large;
     padding: 5px;
     background-color:rgb(161, 161, 161);
     border: solid 0.5px;
+    
 
 }
+
 td{
     border:  0.5px;
     border-style: outset;
@@ -44,7 +56,7 @@ td{
     height: fit-content;
     border-radius: 3px;
 }
-.hint-btn{
+.hint-btn,.safe-btn{
     background-color: rgb(153, 224, 224);
     border-radius: 30px;
 }
@@ -58,4 +70,6 @@ td{
     display: inline-block ;
     text-align: right;
     font-weight: bold;
+    
+    
 }

@@ -9,16 +9,22 @@
 
 </head>
 
-<body onload="initGame(8)" oncontextmenu="return false">
+<body onload="initGame(8)" oncontextmenu="return false" >
     <div class="game">
         <p class="life">life count:<span class="lifeCount">3</span></p>
-        <p class="time">time:<span class="timer">0</span></p>
+        <p class="time">time: <span class="timer">0</span> sec</p>
+        <p class="best-time"><b> best time:<span class="record"></span></b></p>
         <h1>mine sweeper</h1>
         <button class="easy" onclick="changeLevel(4,2)">easy</button>
         <button class="medium" onclick="changeLevel(8,12)">medium</button>
         <button class="hard" onclick="changeLevel(12,30)">hard</button><br>
         <div class="hint"></div>
+        <div class="safe" ></div>
+
         <button class="smiley "onclick="changeLevel(8,12)" ></button>
+        <button class="manuall-mode"onclick="initMAnMode(this)" >🛠️</button>
+        <button class="undo" onclick="undo()" >⬅️</button>
+
         <div class="board"></div>
         <script src="js/util.js"></script>
         <script src="js/game.js"></script>
